@@ -18,6 +18,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.zhuke.comlibrary.BaseApplication;
 import com.zhuke.comlibrary.R;
 import com.zhuke.comlibrary.broadcastreceiver.NetBroadcastReceiver;
 import com.zhuke.comlibrary.utils.ActivityUtils;
@@ -25,11 +26,6 @@ import com.zhuke.comlibrary.utils.DisplayUtil;
 import com.zhuke.comlibrary.utils.MyToast;
 import com.zhuke.comlibrary.utils.StatusBarUtils;
 
-import io.reactivex.Observable;
-import io.reactivex.ObservableSource;
-import io.reactivex.ObservableTransformer;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.schedulers.Schedulers;
 
 /**
  * Created by 15653 on 2017/9/28.
@@ -83,7 +79,7 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
 
 
     public void showToast(String text) {
-        Toast toast = Toast.makeText(this, text, Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(BaseApplication.getInstance(), text, Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.TOP, 0, DisplayUtil.getMobileHeight(getApplicationContext()) / 2);
         toast.show();
     }

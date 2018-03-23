@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">yixun</string>
+    <string name="user_password_confirm">确认密码</string>
 </resources>

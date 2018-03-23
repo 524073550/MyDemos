@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/comlibrary/comlibrary.iml" filepath="$PROJECT_DIR$/comlibrary/comlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easeui/easeui.iml" filepath="$PROJECT_DIR$/easeui/easeui.iml" />
       <module fileurl="file://$PROJECT_DIR$/yixun.iml" filepath="$PROJECT_DIR$/yixun.iml" />
     </modules>
   </component>

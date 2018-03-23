@@ -5,15 +5,12 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
-
 import com.zhuke.comlibrary.base.BaseActivity;
 import com.zhuke.comlibrary.bean.UserEntity;
 import com.zhuke.comlibrary.http.RetrofitManage;
 import com.zhuke.comlibrary.http.Interceptor.Transformer;
 import com.zhuke.comlibrary.http.Subscriber.CommonObserver;
-
 import java.util.HashMap;
-
 
 
 public class MainActivity extends BaseActivity {
@@ -22,7 +19,7 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_commain);
 //        RXCountDownTimeUtils.getIntescens().strtCountDown(mQqqq, 60, this);
         ProgressDialog progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("加载中....");
