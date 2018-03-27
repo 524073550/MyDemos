@@ -1,21 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.zhuke.yixun.ui.MainActivity">
+    android:orientation="vertical"
+    tools:context="com.zhuke.yixun.ui.activity.MainActivity">
 
-    <TextView
-        android:id="@+id/tv"
-        android:clickable="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
 
-</android.support.constraint.ConstraintLayout>
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/ic_conversation_selected_2"
+            android:gravity="center"
+            android:text="消息"
+            android:textColor="@drawable/text_color_selector"/>
+
+        <RadioButton
+            android:id="@+id/contacts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/ic_contact_selected_2"
+            android:gravity="center"
+            android:text="联系人"
+            android:textColor="@drawable/text_color_selector"/>
+
+        <RadioButton
+            android:id="@+id/setting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/ic_plugin_selected_2"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="@drawable/text_color_selector"/>
+    </RadioGroup>
+</LinearLayout>

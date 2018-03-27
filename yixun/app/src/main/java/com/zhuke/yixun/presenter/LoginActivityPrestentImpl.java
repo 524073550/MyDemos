@@ -1,13 +1,9 @@
 package com.zhuke.yixun.presenter;
 
-import android.content.Intent;
 import android.text.TextUtils;
 
 import com.hyphenate.EMCallBack;
 import com.hyphenate.chat.EMClient;
-import com.zhuke.comlibrary.utils.MyToast;
-import com.zhuke.yixun.ui.LoginActivity;
-import com.zhuke.yixun.ui.MainActivity;
 
 /**
  * Created by 15653 on 2018/3/23.

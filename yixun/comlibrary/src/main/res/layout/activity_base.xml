@@ -28,18 +28,18 @@
 
 
         <ImageView
+            android:layout_centerVertical="true"
             android:id="@+id/base_iv_right1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:src="@mipmap/ic_launcher"
-            android:visibility="gone"
             />
 
         <ImageView
             android:id="@+id/base_iv_right2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
             android:layout_toLeftOf="@id/base_iv_right1"
             android:src="@mipmap/ic_launcher"
             android:visibility="gone"
